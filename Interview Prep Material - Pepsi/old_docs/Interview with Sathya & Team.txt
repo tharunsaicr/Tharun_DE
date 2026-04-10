@@ -1,0 +1,51 @@
+1. Be thorough with your previous project and they will ask few questions from that.
+2. How to traverse the Dict and List in python for the given json file.
+  eg: 
+config = [
+{
+'dataasset_name': 'forecast',
+'bronze_table_name': 'bronze_value',
+'silver_table_name': 'silver_value',
+'mappings': {
+'fcst_type_cd':['ForecastTypeCode', 'decimal(38,0)'],
+'fcst_yr_wk_nbr':['ForecastYearWeekNumber','decimal(38,0)'],
+'geo_region_cd':['GeographicalRegionCode', 'string'],
+'sales_fcst_each_qty':['SalesForecastQuantity', 'double'],
+'store_nbr':['StoreId', 'decimal(38,0)'],
+'item_nbr':['ItemId', 'decimal(38,0)'],
+'yr_wk_nbr':['YearWeekNumber', 'decimal(38,0)'],
+'last_updt_dt':['SourceLastUpdatedTimestamp', 'timestamp'],
+'delta_flag':['DeleteIndicator','string'],
+}, 
+
+{
+'dataasset_name': 'forecast_2',
+'bronze_table_name': 'bronze_value_2',
+'silver_table_name': 'silver_value_2',
+
+'mappings': {
+'fcst_type_cd':['ForecastTypeCode', 'decimal(38,0)'],
+'fcst_yr_wk_nbr':['ForecastYearWeekNumber','decimal(38,0)'],
+'geo_region_cd':['GeographicalRegionCode', 'string'],
+'sales_fcst_each_qty':['SalesForecastQuantity', 'double'],
+'store_nbr':['StoreId', 'decimal(38,0)'],
+'item_nbr':['ItemId', 'decimal(38,0)'],
+'yr_wk_nbr':['YearWeekNumber', 'decimal(38,0)'],
+'last_updt_dt':['SourceLastUpdatedTimestamp', 'timestamp'],
+'delta_flag':['DeleteIndicator','string'],
+}
+
+]
+
+
+3. 
+Orders Table:
+OrderID	CustomerID	OrderDate	OrderAmount
+ 
+ 
+Customers Table: 
+CustomerID	CustomerName	Country
+
+
+You need to write a SQL query that returns the top 3 highest spending customers from each country along with their total order amounts.
+ However, you should only consider customers who have placed at least 5 orders.

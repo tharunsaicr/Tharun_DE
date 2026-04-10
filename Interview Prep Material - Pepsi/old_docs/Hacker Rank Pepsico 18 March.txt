@@ -1,0 +1,69 @@
+Hacker Rank Pepsico 18 March test
+#)section 1--SQl Synapse Analytics,ADF 10Ques
+1. which IR is not required private network
+2. specifications of serverless pool
+3. activities in ADF
+4.Where we will be loading data in Azure Synapse Analytics ?-->sink in azure synapse analytics 
+5.Which trigger will be used if same file getting updated at source to run ADF pipeline -- Use event based trigger 
+run 2nd pipeline -- schedule trigger
+6.Azure Data Lake Storage (ADLS) has become a popular choice for staging layers in recent years
+
+#)section2 Pyspark 10Ques
+1.que related to worker
+2.que related to executor
+3.function to count rows in dataframe- count()
+4.isdigit,isdecimal ques
+5.firsrowheader,skiprows que
+6.upsert syntax 
+7.sort,orderby in pyspark
+8.handle null values in pyspark
+
+#)section 3 Python 10Ques
+1.tuple
+2.provide output of below code block ?
+x = 0
+
+try:
+    print(x)
+    print(1/x)
+except:
+    print("error msg")
+finally:
+    print(1 + x)
+print(2 + x)    
+
+3.provide output of below code block ?
+  list1 = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+
+list1[2:5] =[]
+print(list1)
+
+4.Quetion on OOP ?
+class Dog:
+
+  def __init__(self, name, breed, age):
+
+    self.name = name
+    self.breed = breed
+    self.age = age
+	
+ans  -- dog = Dog("Max", "Golden Retriever", 4)
+
+#)section4 git and data warehouse 10Ques
+1.git add,commit
+2.what to do if wrong changes commited to git
+3.What is delete cascade in sql ?
+	In SQL, DELETE CASCADE is a constraint applied to foreign keys that automates the deletion of related data when the referencing row is deleted. It essentially creates a chain reaction of deletions, ensuring data consistency and preventing orphaned records.
+
+4.Which statement correctly defines the of the below query for calculation annual salary 500 is bonus?
+
+    select employee_id,12*sal+500  from employee;
+
+5.How to create a spark session object syntax? 
+	from pyspark.sql import SparkSession
+	spark = SparkSession.builder().appName("MySparkApp").getOrCreate()
+
+6. What is the difference between data warehouse and data lake ?
+	https://www.analyticsvidhya.com/blog/2023/02/a-comprehensive-guide-to-data-lake-vs-data-warehouse/
+
+

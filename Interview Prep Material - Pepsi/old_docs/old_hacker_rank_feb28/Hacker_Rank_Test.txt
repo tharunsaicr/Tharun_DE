@@ -1,0 +1,539 @@
+1. Given below variables and values. what will be output ?
+
+x = 0
+y = 2
+z = len("python")
+
+x = y > z
+print(x)
+
+ans : False (is boolean)
+
+2. perform below operation on list and mark the op ?
+list1 = ['a','a','a']
+list1 = list1*2
+
+print(list1)
+
+Ans -- ['a', 'a', 'a', 'a', 'a', 'a']
+
+Which of the below mentioned tool is not used with spark ?
+Ans Spark ans -- ambari 
+
+Which of the option is true for Azure Storage?
+Azure storage account name should be universally unique 
+
+
+Ans optimize 
+
+Ans parquet 
+
+IR question 
+
+Where we will be loading data in Azure Synapse Analytics ?
+sink in azure synapse analytics 
+
+How we pass parameter from adf to adx -- widgets 
+
+what is storage optimised worker in ADB  - high disk throug put 
+
+git tag branch 
+
+Which of the following is not true for Apache Spark Execution?
+A)
+To simplify working with structured data it provides DataFrame abstraction in Python, Java, and Scala.
+B)
+The best way to use Spark SQL is inside a Spark application. This empowers us to load data and query it with SQL.
+C)
+The data can be read and written in a variety of structured formats. For example, JSON, Hive Tables, and Parquet.
+D)
+Using SQL we can query data,only from inside a Spark program and not from external tools.
+Correct Answer : Option (D) :   Using SQL we can query data,only from inside a Spark program and not from external tools.
+
+
+dayofyear -- question 
+
+Which trigger will be used if same file getting updated at source to run ADF pipeline -- Use event based trigger 
+run 2nd pipeline -- schedule trigger 
+
+
+silver layer -- we store cleaned data 
+
+scd1 
+
+SCD1 overwrites existing records with updated attribute values, while SCD2 creates new records to preserve the historical changes in dimension data.
+
+Azure Data Lake Storage (ADLS) has become a popular choice for staging layers in recent years
+
+provide output of below code block ?
+x = 0
+
+try:
+    print(x)
+    print(1/x)
+except:
+    print("error msg")
+finally:
+    print(1 + x)
+print(2 + x)    
+
+op:
+# 0
+# error msg
+# 1
+# 2
+
+provide output of below code block ?
+tup1 = (1,2,3,[4,5])
+tup1[3][1] = 50
+
+print(tup1)
+
+op:
+#(1, 2, 3, [4, 50])
+
+provide output of below code block ?
+list1 = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+
+list1[2:5] =[]
+print(list1)
+
+output
+#['a', 'b', 'f', 'g']
+
+Quetion on OOP ?
+class Dog:
+
+  def __init__(self, name, breed, age):
+
+    self.name = name
+    self.breed = breed
+    self.age = age
+	
+ans  -- dog = Dog("Max", "Golden Retriever", 4)
+
+
+============
+
+
+1.	What is the correct order of execution for the below sql statement
+
+	Below is the order of execution:
+	FROM
+	ON  (Join)
+	WHERE
+	GROUP BY
+	HAVING
+	SELECT
+	ORDER BY
+	LIMIT
+
+  e.g.
+
+  SELECT s.name, AVG(sc.score) AS avg_score
+FROM students s
+JOIN scores sc ON s.student_id = sc.student_id
+WHERE s.age > 20
+GROUP BY s.name
+HAVING AVG(sc.score) > 80
+ORDER BY avg_score DESC
+LIMIT 2;
+	
+2.	For unique constraint which from the below option can not have duplicate values options (table,column,row)
+
+3.	Which is not a constraint from the below option ?
+	1. alternate key 2. primary key 3.foreign key 4.check 
+	Ans is Alternate Key
+	
+4.  what type of join the below query has option (inner,cross,left,full outer,right outer) 
+
+   select * from table1 join table2; 
+   Ans is Cross Join  -- Combines every row with every row without matching condition.
+   
+5. 	What is delete cascade in sql ?
+	In SQL, DELETE CASCADE is a constraint applied to foreign keys that automates the deletion of related data when the referencing row is deleted. It essentially creates a chain reaction of deletions, ensuring data consistency and preventing orphaned records.
+
+	Here's how it works:
+
+	Foreign key: This is a column in a child table that references a primary key in a parent table. It establishes a relationship between the two tables, ensuring data integrity.
+	DELETE CASCADE: When enabled on a foreign key, it instructs the database to automatically delete any rows in the child table when the corresponding row in the parent table is deleted.
+	
+6.	Which statement correctly defines the of the below query for calculation annual salary 500 is bonus?
+
+    select employee_id,12*sal+500  from employee;
+	
+7.	What are the comparision operator in sql?
+	Here are some common comparison operators in SQL and their meanings:
+
+	=: Equal to
+	!= or <>: Not equal to
+	<: Less than
+	>: Greater than
+	<=: Less than or equal to
+	>=: Greater than or equal to
+	BETWEEN: Value falls within a range
+	IN: Value is included in a list
+	
+8. 	Which type of table can store the relationship between two tables that have many to many relationship ?
+	A bridge table, also known as an association table or junction table, is a special type of table used in relational databases to manage the relationship between two tables that have a many-to-many relationship. This means that a single record in one table can be associated with multiple records in the other table, and vice versa.
+	
+9. What will be the output of 29+6*2**2/8-10 ?
+	bodmas
+	29+6*4/8-10
+	29+6*0.5-10
+	29 + 3 - 10
+	32 - 10
+	22
+	
+10. How to merger two dictionary using update statement?
+	dict3 = dict1.copy()
+	dict3.update(dict2)
+	========================
+	res = {**dict1, **dict2}
+	
+11. Choose correct output for string.str.swapcase()
+	swapcase() - converts lower case to upper case and vise versa. It ignores punctuations, special character and numbers.
+	
+	for python use str.swapcase()
+	for pandas series objects use string.str.swapcase()
+	
+12. What will be the output of copy.deepcopy()
+	The copy.deepcopy() function in Python is a powerful tool for creating independent copies of complex data structures. Unlike a shallow copy, which simply creates new references to the same underlying data, a deep copy creates entirely new objects and recursively copies all nested data within them. This ensures that any modifications made to the copy will not affect the original data.
+	
+13. Given a list and then insert() and append function is applied. What will be the output?
+	list1 = [1,2,3,4,5]
+
+	list1.insert(1,10)
+
+	print(list1) --> [1, 10, 2, 3, 4, 5]
+
+	list1.append(20)
+
+	print(list1) --> [1, 10, 2, 3, 4, 5, 20]
+	
+14. What is false about tuple and list from the given options?	
+	Both tuple and list cannot be changed after creation  --> Both can be changed once created.
+	
+15. When to use ** in dictionary?
+	1. To access the values of dictionary
+	2. Unpacking the dictionary arguments
+	3. Merging dictionary
+	
+16. How to use global and local varible in a function?
+	Local : Defined inside a function, accessible only within that function.
+	Global : Defined outside any function, accessible throughout the program, including within functions.
+
+	
+17. How to convert a pandas dataframe into PySpark dataframe?
+    spark_df = spark.createDataFrame(pandas_df)
+	
+18. Which function returns all the elements from a rdd -- rdd.collect()
+
+19. How to access the 4th column of a dataframe -- (df[df.columns[3]])
+
+20. Which statement is used to save data from dataframe to file ?
+	df.write.format().options().save()
+	
+21. How to create a spark session object syntax? 
+	from pyspark.sql import SparkSession
+	spark = SparkSession.builder().appName("MySparkApp").getOrCreate()
+
+22. How to get the difference between two columns in dataframe
+	use diff function in numpy
+	
+23. When to use collect function?
+	collect() is an action operation that is used to retrieve all the elements of the 	dataset (from all nodes) to the driver node.
+	
+24. Which functions runs the pyspark job ? - Transformation and Action function
+
+25. output using lambda function
+
+1. What is the most important difference between star and snowflake schema?
+
+	A star schema has denormalized dimension tables, while a snowflake schema has normalized dimension tables.
+
+	A star schema is easier to design and implement than a snowflake schema.
+
+	A star schema can be more efficient to query than a snowflake schema, because there are fewer JOINs between tables.
+
+	A star schema can require more storage space than a snowflake schema, because of the denormalized data.
+
+	A star schema can be more difficult to update than a snowflake schema, because of the denormalized data.
+
+	A star schema can be more difficult to troubleshoot than a snowflake schema, because of the denormalized data.
+	
+2. What is the difference between data warehouse and data lake ?
+	https://www.analyticsvidhya.com/blog/2023/02/a-comprehensive-guide-to-data-lake-vs-data-warehouse/
+	
+3. What is Slowly changing dimesion type 1 ?
+	Involes Overwriting data in dimesions. Only Upsert is allowed.
+	
+4. OLAP is part of which options below -- Data warehouse
+	https://www.geeksforgeeks.org/olap-operations-in-dbms/
+	
+	OLAP -- Online Analytical Processing
+	OLTP -- Online Transaction Processing
+	
+5) Difference between OLAP and OLTP?
+	https://www.geeksforgeeks.org/difference-between-olap-and-oltp-in-dbms/?ref=header_search
+	
+6) Why do we use foreign key?  
+	
+	A FOREIGN KEY is a field (or collection of fields) in one table, that refers to the PRIMARY KEY in another table.
+
+	The table with the foreign key is called the child table, and the table with the primary key is called the referenced or parent table.
+	
+	Foreign keys are essential for maintaining data integrity, managing relationships, and ensuring efficient data access within relational databases. 
+
+7) When to use Big Data Solutions scenario based questions? 
+
+	1. Volume and Velocity
+	2. Variety and Veracity
+	3. Value Extraction and Insights
+
+
+19thdec2023 interview questions
+================================
+python
+======
+1.What will be the output of the following Python code?(similar question like this)
+class test:
+    def __init__(self):
+        self.variable = 'Old'
+        self.Change(self.variable)
+    def Change(self, var):
+        var = 'New'
+obj=test()
+print(obj.variable)
+ans - Old
+2.shallow copy vs deep copy 
+  import copy
+  xs = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+  zs = copy.deepcopy(xs)
+  zs[0][1]=10
+  print(xs)
+  print(zs)
+  ans-[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+      [[1, 10, 3], [4, 5, 6], [7, 8, 9]]
+A shallow copy means constructing a new collection object and then populating it with references to the child objects found in the original.
+ In essence, a shallow copy is only one level deep. The copying process does not recurse and therefore won’t create copies of the child objects themselves.
+
+A deep copy makes the copying process recursive. It means first constructing a new collection object and then recursively populating it with copies of the child objects found in the original. 
+Copying an object this way walks the whole object tree to create a fully independent clone of the original object and all of its children.
+
+3.How to merge dictionary 2 questions 
+   def Merge(dict1, dict2):
+    return(dict2.update(dict1))
+4.What is chain decorators?
+   You can also decorate a function with multiple decorators. They will be executed in the order that they are listed
+
+5.Method overloading
+   Two or more methods have the same name but different numbers of parameters or different types of parameters, or both. These methods are called overloaded methods and this is called method overloading. 
+
+   def product(a, b):
+    p = a * b
+    print(p)
+ 
+def product(a, b, c):
+    p = a * b*c
+    print(p)
+
+product(4,5,5)
+ans-100
+
+6.insert() vs append()
+The difference is that with append, you just add a new entry at the end of the list. 
+With insert(position, new_entry) you can create a new entry exactly in the position you want.
+
+7.** in dictionary
+**d means "treat the key-value pairs in the dictionary as additional named arguments to this function call
+def foo(x, y):
+    print(x, y)
+
+d = {'x':1, 'y':2}
+foo(**d)
+
+8.Python question on boolean & int
+
+9.Scenario based questions on python 
+
+10.Scenario based question on List slicing (question on negative index) 
+   ans-String = 'Tredence'
+       arr = String[-8:-4]
+       ans - Tred
+11.how to invoke a function in python choose the correct statement 
+   ans - def myfunction():
+    print("Hello World")
+    myfunction()
+12.what break statement do ?
+  ans - break allows you to exit a loop when an external condition is met. Normal program execution resumes at the next statement. You can use a break statement with both for loops and while loops. 
+In a nested loop, break will stop execution of the innermost loop
+13.What will be the output for below code. 
+
+‘1’ + ‘2’ if ‘123’.isdigit() else ‘2’ + ‘3’ 
+
+Options: 
+
+12 
+
+23 
+
+123 
+
+2312 
+ 
+ans - 12
+
+SQL
+=====
+1.which type of table can store the relationship between two tables that have many to many relationship 
+bridge table
+2.select output of decode funtion. 
+Select decode(2,2,decode(3,3,2)) as dc from dual
+ans- 2
+3.what is delete cascade in sql? 
+In SQL, DELETE CASCADE is a constraint applied to foreign keys that automates the deletion of related data when the referencing row is deleted. It essentially creates a chain reaction of deletions, ensuring data consistency and preventing orphaned records.
+
+	Here's how it works:
+
+	Foreign key: This is a column in a child table that references a primary key in a parent table. It establishes a relationship between the two tables, ensuring data integrity.
+	DELETE CASCADE: When enabled on a foreign key, it instructs the database to automatically delete any rows in the child table when the corresponding row in the parent table is deleted.
+4.which clause is used to create temporary table using select statement
+ ans : using with clause
+5.What  is not type of constraint in sql ? 
+  a.Primary key
+  b.alternative key
+  c.foreign key
+  d.unique
+ ans - unique
+
+6.which type of join is also known as cartesian product? 
+ans - A CROSS JOIN is a JOIN operation that produces the Cartesian product of two tables.
+
+7.What is SCD Type 1 ?
+  ans - This method overwrites the existing value with the new value and does not retain history
+8. For unique constraint which from the below option can’t have duplicate values options (table,column,row)
+   ans - row
+9.Given a table with 10 rows with rownumber. How many rows written for below sql statement 
+
+  Select * from table1 where  rownumber > 5
+  Ans - 5
+10.
+
+pySpark
+========
+1.Which menthod is used to find the percentage difference between the values for each row and by default, the previous row?
+ans dataframe.pct_change(periods, axis, fill_method, limit, freq, kwargs)
+
+2.create rdd to dataframe using row function
+columns = ["language","users_count"]
+data = [("Java", "20000"), ("Python", "100000"), ("Scala", "3000")]
+rowData = map(lambda x: Row(*x), data) 
+dfFromData3 = spark.createDataFrame(rowData,columns)
+
+3.order by and sort by in pyspark
+You can use either sort() or orderBy() function of PySpark DataFrame to sort DataFrame by ascending or descending order based on single or multiple columns
+df.sort(col("department").asc(),col("state").asc()).show(truncate=False)
+df.orderBy(col("department").asc(),col("state").asc()).show(truncate=False)
+
+4.Join with group by clause in pySpark dataframe
+   df2_grouped = df.groupBy("Name").agg(F.collect_list(F.col("Age")).alias("Age"))
+   df_joined = df2_grouped.join(df1, "Name", "outer")
+
+5.Read json file using pyspark
+  df = spark.read.json("resources/zipcodes.json")
+
+6.How to save dataframe to a table?
+  sampleDF.write.mode('overwrite') \
+         .saveAsTable("employee")
+7.How to write spark session and which function is used to create? 
+  ans - from pyspark.sql import SparkSession
+from dotenv import load_dotenv
+def create_spark_session():
+    """Create a Spark Session"""
+    _ = load_dotenv()
+    return (
+        SparkSession
+        .builder
+        .appName("SparkApp")
+        .master("local[5]")
+        .getOrCreate()
+    )
+spark = create_spark_session()
+8.When you use local[*] in creating spark session what cluster spark will choose? 
+  ans - Local Hadoop and internal machines
+9.Output of pyspark code on Rank function 
+  ans- row_number()-Returns a sequential number starting from 1 within a window partition
+	rank() -	Returns the rank of rows within a window partition, with gaps.
+      percent_rank()-Returns the percentile rank of rows within a window partition.
+      dense_rank() -Returns the rank of rows within a window partition without any gaps. Where as Rank() returns rank with gaps.
+10.Convert rdd to dataframe and select two columns from it. Options were based on map 
+   ans - columns = ["language","users_count"]
+	data = [("Java", "20000"), ("Python", "100000"), ("Scala", "3000")]
+      rowData = map(lambda x: Row(*x), data) 
+      dfFromData3 = spark.createDataFrame(rowData,columns)
+      dfFromData3.select('language','users_count')
+11.Question on Creating dataframe from sparkContext and sqlContext  
+   ans - from pyspark import SparkContext
+         from pyspark.sql import SQLContext
+	   sc = SparkContext('local', 'Spark SQL') 
+	   sqlc = SQLContext(sc)
+12.7)How to update column in pyspark?
+  df2=df.withColumn("salary", df.salary*3)
+
+Datawarehouse
+===============
+  
+1) which one to upload first in datawarehouse fact table or dimension table?
+     The process of loading the base schema requires that fact tables and dimension tables be loaded. Fact tables bear foreign keys to the dimension tables and are therefore dependent entities. 
+     This would suggest that dimension tables be loaded first
+2)What is orchestration?
+	Orchestration is the coordination and management of multiple computer systems, applications and/or services, stringing together multiple tasks in order to execute a larger workflow or process. 
+      These processes can consist of multiple tasks that are automated and can involve multiple systems.
+         The goal of orchestration is to streamline and optimize the execution of frequent, repeatable processes and thus to help data teams more easily manage complex tasks and workflows. Anytime a process is repeatable, and its tasks can be automated, orchestration can be used to save time, increase efficiency, and eliminate redundancies. 
+      For example, you can simplify data and machine learning with jobs orchestration.
+3)What is ETL?
+   ETL, which stands for extract, transform and load, is a data integration process that combines data from multiple data sources into a single, 
+consistent data store that is loaded into a data warehouse or other target system.
+
+4)What is Fact,dimension,measures?
+ 
+	https://blogs.sap.com/2021/07/22/facts-measures-and-dimensions/
+
+5)What are the essential table to implement star schema ?
+ Fact tables and dimension tables
+A star schema has a single fact table in the center, containing business "facts" (like transaction amounts and quantities). 
+The fact table connects to multiple other dimension tables along "dimensions" like time, or product
+
+6)What are characteristics of how large companies using big data analytics effectively? 
+  
+  Volume. In the current scenario, the amount of data that companies possess matters. ...
+ Velocity. Velocity refers to the swiftness of data processing. ...
+  Variety. Variety refers to the diverse categories of big data. ...
+  Value. ...
+ Veracity. ...
+ Validity. ...
+ Volatility. ...
+ Visualization.
+
+
+7)OLAP is part of which option(data warehouse)
+  OLAP combines and groups this data into categories to provide actionable insights for strategic planning. For example, a retailer stores data about all the products it sells, 
+such as color, size, cost, and location.
+OLAP solutions enhance a data warehouse with aggregate data and business calculations
+
+8) Data Quality Check
+   the different aspects of data quality is the “Six Dimensions” model. This model breaks data quality down into the following concepts:
+
+   Consistency – Data values should not conflict with other values across data sets 
+   Accuracy – There should be no errors in the data
+   Validity – The data should conform to a certain format
+   Completeness – There should be no missing data
+   Timeliness – The data should be up to date
+   Uniqueness – There should be no duplicates 
+
+
+	
+
+
+    

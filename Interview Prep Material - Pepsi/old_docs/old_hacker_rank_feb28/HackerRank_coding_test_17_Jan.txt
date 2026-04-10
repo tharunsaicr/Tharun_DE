@@ -1,0 +1,75 @@
+1. Your team is planning on using External tables in Azure Synapse Analytics. Which of the following can be queried via the use of External tables?
+
+
+Objects in Azure Data Lake Gen2
+Files in Azure File Shares
+Documents in Azure Cosmos DB
+Tables in Azure SQL Databases
+
+Ans: 1
+
+2. You have an Azure Databricks cluster. Configuration of the cluster even after it is terminated. Which of the following can do for this requirement? 
+
+Pin the cluster
+Create a notebook in the clutser with the cluster configuration
+Configure the cluster init
+NOTA
+
+Ans: 1
+
+3. Azure Synapse Analytics supports parallel processing of data using: 
+
+Split processing across multiple compute nodes
+High Performance single node machines
+Doesn't support parallel processing
+NOTA
+
+Ans: 1
+
+4. list = ['python', 'python', 'python']
+list = list * 2
+print(list)
+
+What is the correct outcome?
+
+
+(['python', 'python', "python'], ['python', python', python'])
+
+[pythonpython', pythonpython', 'pythonpython"]
+
+['python', 'python', 'python', 'python', 'python', 'python']
+
+[[pythan: 'python, 'python'), ['python, pythoni, python']]
+
+Ans: 3
+
+5. S = 'python'
+for i in range(len(s)) :
+i = s[i]. upper ()
+print(s, end=**)
+
+select one
+ 
+PYTHON
+Python
+python
+p y t h o n
+Runtime Exception
+
+Ans: 5
+
+6. tuple = (1, 2, 3, [4, 5])
+tuple[3][1] = 10
+
+What will be the output of the above code.
+
+The code will fail since tuples are immutable
+(1, 2, 3, (4, 10))
+(1, 2, 3, 4, 10)
+(1, 2, 3, 4, 10)
+
+Ans: 2
+
+
+
+

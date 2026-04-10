@@ -1,0 +1,1187 @@
+Hackerrank test 12th March-24
+
+1. How to display metedata of delta tables in databricks?
+Ans. DESCRIBE TABLE table_name
+
+2. command to commit changes in git?
+Ans. 
+
+3. Which type of distribution is used for dimension table in Synanpse analytics?
+Ans. Hash 
+
+4. 3-4 Scenario based questions related to azure cloud and databricks
+
+5. Azure synapse studio notebook based on?
+Ans. Spark pool
+
+6. Scenario based question on fact and dimension table?
+
+7. 2 questions related to worker node and executor
+
+==============================================================================================
+
+1. Given below variables and values. what will be output ?
+
+x = 0
+y = 2
+z = len("python")
+
+x = y > z
+print(x)
+
+ans is boolean 
+
+2. perform below operation on list and mark the op ?
+list1 = ['a','a','a']
+list1 = list1*2
+
+print(list1)
+
+Ans -- ['a', 'a', 'a', 'a', 'a', 'a']
+
+Which of the below mentioned tool is not used with spark ?
+Ans Spark ans -- ambari 
+
+Which of the option is true for Azure Storage?
+Azure storage account name should be universally unique 
+
+Avro is the most efficient format for nested data
+
+Ans optimize 
+
+Ans parquet 
+
+IR question 
+
+Where we will be loading data in Azure Synapse Analytics ?
+sink in azure synapse analytics 
+
+How we pass parameter from adf to adx -- widgets 
+
+what is storage optimised worker in ADB  - high disk throug put 
+
+git tag branch 
+
+Which of the following is not true for Apache Spark Execution?
+A)
+To simplify working with structured data it provides DataFrame abstraction in Python, Java, and Scala.
+B)
+The best way to use Spark SQL is inside a Spark application. This empowers us to load data and query it with SQL.
+C)
+The data can be read and written in a variety of structured formats. For example, JSON, Hive Tables, and Parquet.
+D)
+Using SQL we can query data,only from inside a Spark program and not from external tools.
+Correct Answer : Option (D) :   Using SQL we can query data,only from inside a Spark program and not from external tools.
+
+
+dayofyear -- question 
+
+Which trigger will be used if same file getting updated at source to run ADF pipeline -- Use event based trigger 
+run 2nd pipeline -- schedule trigger 
+
+
+silver layer -- we store cleaned data 
+
+scd1 
+
+Azure Data Lake Storage (ADLS) has become a popular choice for staging layers in recent years
+
+provide output of below code block ?
+x = 0
+
+try:
+    print(x)
+    print(1/x)
+except:
+    print("error msg")
+finally:
+    print(1 + x)
+print(2 + x)    
+
+op:
+# 0
+# error msg
+# 1
+# 2
+
+provide output of below code block ?
+tup1 = (1,2,3,[4,5])
+tup1[3][1] = 50
+
+print(tup1)
+
+op:
+#(1, 2, 3, [4, 50])
+
+provide output of below code block ?
+list1 = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+
+list1[2:5] =[]
+print(list1)
+
+output
+#['a', 'b', 'f', 'g']
+
+Quetion on OOP ?
+class Dog:
+
+  def __init__(self, name, breed, age):
+
+    self.name = name
+    self.breed = breed
+    self.age = age
+	
+ans  -- dog = Dog("Max", "Golden Retriever", 4)
+
+
+============
+
+
+1.	What is the correct order of execution for the below sql statement
+
+	Below is the order of execution:
+	FROM
+	ON  (Join)
+	WHERE
+	GROUP BY
+	HAVING
+	SELECT
+	ORDER BY
+	LIMIT
+	
+2.	For unique constraint which from the below option can not have duplicate values options (table,column,row)
+
+3.	Which is not a constraint from the below option ?
+	1. alternate key 2. primary key 3.foreign key 4.check 
+	Ans is Alternate Key
+	
+4.  what type of join the below query has option (inner,cross,left,full outer,right outer) 
+
+   select * from table1 join table2; 
+   Ans is Cross Join  -- Combines every row with every row without matching condition.
+   
+5. 	What is delete cascade in sql ?
+	In SQL, DELETE CASCADE is a constraint applied to foreign keys that automates the deletion of related data when the referencing row is deleted. It essentially creates a chain reaction of deletions, ensuring data consistency and preventing orphaned records.
+
+	Here's how it works:
+
+	Foreign key: This is a column in a child table that references a primary key in a parent table. It establishes a relationship between the two tables, ensuring data integrity.
+	DELETE CASCADE: When enabled on a foreign key, it instructs the database to automatically delete any rows in the child table when the corresponding row in the parent table is deleted.
+	
+6.	Which statement correctly defines the of the below query for calculation annual salary 500 is bonus?
+
+    select employee_id,12*sal+500  from employee;
+	
+7.	What are the comparision operator in sql?
+	Here are some common comparison operators in SQL and their meanings:
+
+	=: Equal to
+	!= or <>: Not equal to
+	<: Less than
+	>: Greater than
+	<=: Less than or equal to
+	>=: Greater than or equal to
+	BETWEEN: Value falls within a range
+	IN: Value is included in a list
+	
+8. 	Which type of table can store the relationship between two tables that have many to many relationship ?
+	A bridge table, also known as an association table or junction table, is a special type of table used in relational databases to manage the relationship between two tables that have a many-to-many relationship. This means that a single record in one table can be associated with multiple records in the other table, and vice versa.
+	
+9. What will be the output of 29+6*2**2/8-10 ?
+	bodmas
+	29+6*4/8-10
+	29+6*0.5-10
+	29 + 3 - 10
+	32 - 10
+	22
+	
+10. How to merger two dictionary using update statement?
+	dict3 = dict1.copy()
+	dict3.update(dict2)
+	========================
+	res = {**dict1, **dict2}
+	
+11. Choose correct output for string.str.swapcase()
+	swapcase() - converts lower case to upper case and vise versa. It ignores punctuations, special character and numbers.
+	
+	for python use str.swapcase()
+	for pandas series objects use string.str.swapcase()
+	
+12. What will be the output of copy.deepcopy()
+	The copy.deepcopy() function in Python is a powerful tool for creating independent copies of complex data structures. Unlike a shallow copy, which simply creates new references to the same underlying data, a deep copy creates entirely new objects and recursively copies all nested data within them. This ensures that any modifications made to the copy will not affect the original data.
+	
+13. Given a list and then insert() and append function is applied. What will be the output?
+	list1 = [1,2,3,4,5]
+
+	list1.insert(1,10)
+
+	print(list1) --> [1, 10, 2, 3, 4, 5]
+
+	list1.append(20)
+
+	print(list1) --> [1, 10, 2, 3, 4, 5, 20]
+	
+14. What is false about tuple and list from the given options?	
+	Both tuple and list cannot be changed after creation  --> Both can be changed once created.
+	
+15. When to use ** in dictionary?
+	1. To access the values of dictionary
+	2. Unpacking the dictionary arguments
+	3. Merging dictionary
+	
+16. How to use global and local varible in a function?
+	Local : Defined inside a function, accessible only within that function.
+	Global : Defined outside any function, accessible throughout the program, including within functions.
+
+	
+17. How to convert a pandas dataframe into PySpark dataframe?
+    spark_df = spark.createDataFrame(pandas_df)
+	
+18. Which function returns all the elements from a rdd -- rdd.collect()
+
+19. How to access the 4th column of a dataframe -- (df[df.columns[3]])
+
+20. Which statement is used to save data from dataframe to file ?
+	df.write.format().options().save()
+	
+21. How to create a spark session object syntax? 
+	from pyspark.sql import SparkSession
+	spark = SparkSession.builder().appName("MySparkApp").getOrCreate()
+
+22. How to get the difference between two columns in dataframe
+	use diff function in numpy
+	
+23. When to use collect function?
+	collect() is an action operation that is used to retrieve all the elements of the 	dataset (from all nodes) to the driver node.
+	
+24. Which functions runs the pyspark job ? - Transformation and Action function
+
+25. output using lambda function
+
+1. What is the most important difference between star and snowflake schema?
+
+	A star schema has denormalized dimension tables, while a snowflake schema has normalized dimension tables.
+
+	A star schema is easier to design and implement than a snowflake schema.
+
+	A star schema can be more efficient to query than a snowflake schema, because there are fewer JOINs between tables.
+
+	A star schema can require more storage space than a snowflake schema, because of the denormalized data.
+
+	A star schema can be more difficult to update than a snowflake schema, because of the denormalized data.
+
+	A star schema can be more difficult to troubleshoot than a snowflake schema, because of the denormalized data.
+	
+2. What is the difference between data warehouse and data lake ?
+	https://www.analyticsvidhya.com/blog/2023/02/a-comprehensive-guide-to-data-lake-vs-data-warehouse/
+	
+3. What is Slowly changing dimesion type 1 ?
+	Involes Overwriting data in dimesions. Only Upsert is allowed.
+	
+4. OLAP is part of which options below -- Data warehouse
+	https://www.geeksforgeeks.org/olap-operations-in-dbms/
+	
+	OLAP -- Online Analytical Processing
+	OLTP -- Online Transaction Processing
+	
+5) Difference between OLAP and OLTP?
+	https://www.geeksforgeeks.org/difference-between-olap-and-oltp-in-dbms/?ref=header_search
+	
+6) Why do we use foreign key?  
+	
+	A FOREIGN KEY is a field (or collection of fields) in one table, that refers to the PRIMARY KEY in another table.
+
+	The table with the foreign key is called the child table, and the table with the primary key is called the referenced or parent table.
+	
+	Foreign keys are essential for maintaining data integrity, managing relationships, and ensuring efficient data access within relational databases. 
+
+7) When to use Big Data Solutions scenario based questions? 
+
+	1. Volume and Velocity
+	2. Variety and Veracity
+	3. Value Extraction and Insights
+
+
+19thdec2023 interview questions
+================================
+python
+======
+1.What will be the output of the following Python code?(similar question like this)
+class test:
+    def __init__(self):
+        self.variable = 'Old'
+        self.Change(self.variable)
+    def Change(self, var):
+        var = 'New'
+obj=test()
+print(obj.variable)
+ans - Old
+2.shallow copy vs deep copy 
+  import copy
+  xs = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+  zs = copy.deepcopy(xs)
+  zs[0][1]=10
+  print(xs)
+  print(zs)
+  ans-[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+      [[1, 10, 3], [4, 5, 6], [7, 8, 9]]
+A shallow copy means constructing a new collection object and then populating it with references to the child objects found in the original.
+ In essence, a shallow copy is only one level deep. The copying process does not recurse and therefore won’t create copies of the child objects themselves.
+
+A deep copy makes the copying process recursive. It means first constructing a new collection object and then recursively populating it with copies of the child objects found in the original. 
+Copying an object this way walks the whole object tree to create a fully independent clone of the original object and all of its children.
+
+3.How to merge dictionary 2 questions 
+   def Merge(dict1, dict2):
+    return(dict2.update(dict1))
+4.What is chain decorators?
+   You can also decorate a function with multiple decorators. They will be executed in the order that they are listed
+
+5.Method overloading
+   Two or more methods have the same name but different numbers of parameters or different types of parameters, or both. These methods are called overloaded methods and this is called method overloading. 
+
+   def product(a, b):
+    p = a * b
+    print(p)
+ 
+def product(a, b, c):
+    p = a * b*c
+    print(p)
+
+product(4,5,5)
+ans-100
+
+6.insert() vs append()
+The difference is that with append, you just add a new entry at the end of the list. 
+With insert(position, new_entry) you can create a new entry exactly in the position you want.
+
+7.** in dictionary
+**d means "treat the key-value pairs in the dictionary as additional named arguments to this function call
+def foo(x, y):
+    print(x, y)
+
+d = {'x':1, 'y':2}
+foo(**d)
+
+8.Python question on boolean & int
+
+9.Scenario based questions on python 
+
+10.Scenario based question on List slicing (question on negative index) 
+   ans-String = 'Tredence'
+       arr = String[-8:-4]
+       ans - Tred
+11.how to invoke a function in python choose the correct statement 
+   ans - def myfunction():
+    print("Hello World")
+    myfunction()
+12.what break statement do ?
+  ans - break allows you to exit a loop when an external condition is met. Normal program execution resumes at the next statement. You can use a break statement with both for loops and while loops. 
+In a nested loop, break will stop execution of the innermost loop
+13.What will be the output for below code. 
+
+‘1’ + ‘2’ if ‘123’.isdigit() else ‘2’ + ‘3’ 
+
+Options: 
+
+12 
+
+23 
+
+123 
+
+2312 
+ 
+ans - 12
+
+SQL
+=====
+1.which type of table can store the relationship between two tables that have many to many relationship 
+bridge table
+2.select output of decode funtion. 
+Select decode(2,2,decode(3,3,2)) as dc from dual
+ans- 2
+3.what is delete cascade in sql? 
+In SQL, DELETE CASCADE is a constraint applied to foreign keys that automates the deletion of related data when the referencing row is deleted. It essentially creates a chain reaction of deletions, ensuring data consistency and preventing orphaned records.
+
+	Here's how it works:
+
+	Foreign key: This is a column in a child table that references a primary key in a parent table. It establishes a relationship between the two tables, ensuring data integrity.
+	DELETE CASCADE: When enabled on a foreign key, it instructs the database to automatically delete any rows in the child table when the corresponding row in the parent table is deleted.
+4.which clause is used to create temporary table using select statement
+ ans : using with clause
+5.What  is not type of constraint in sql ? 
+  a.Primary key
+  b.alternative key
+  c.foreign key
+  d.unique
+ ans - unique
+
+6.which type of join is also known as cartesian product? 
+ans - A CROSS JOIN is a JOIN operation that produces the Cartesian product of two tables.
+
+7.What is SCD Type 1 ?
+  ans - This method overwrites the existing value with the new value and does not retain history
+8. For unique constraint which from the below option can’t have duplicate values options (table,column,row)
+   ans - row
+9.Given a table with 10 rows with rownumber. How many rows written for below sql statement 
+
+  Select * from table1 where  rownumber > 5
+  Ans - 5
+10.
+
+pySpark
+========
+1.Which menthod is used to find the percentage difference between the values for each row and by default, the previous row?
+ans dataframe.pct_change(periods, axis, fill_method, limit, freq, kwargs)
+
+2.create rdd to dataframe using row function
+columns = ["language","users_count"]
+data = [("Java", "20000"), ("Python", "100000"), ("Scala", "3000")]
+rowData = map(lambda x: Row(*x), data) 
+dfFromData3 = spark.createDataFrame(rowData,columns)
+
+3.order by and sort by in pyspark
+You can use either sort() or orderBy() function of PySpark DataFrame to sort DataFrame by ascending or descending order based on single or multiple columns
+df.sort(col("department").asc(),col("state").asc()).show(truncate=False)
+df.orderBy(col("department").asc(),col("state").asc()).show(truncate=False)
+
+4.Join with group by clause in pySpark dataframe
+   df2_grouped = df.groupBy("Name").agg(F.collect_list(F.col("Age")).alias("Age"))
+   df_joined = df2_grouped.join(df1, "Name", "outer")
+
+5.Read json file using pyspark
+  df = spark.read.json("resources/zipcodes.json")
+
+6.How to save dataframe to a table?
+  sampleDF.write.mode('overwrite') \
+         .saveAsTable("employee")
+7.How to write spark session and which function is used to create? 
+  ans - from pyspark.sql import SparkSession
+from dotenv import load_dotenv
+def create_spark_session():
+    """Create a Spark Session"""
+    _ = load_dotenv()
+    return (
+        SparkSession
+        .builder
+        .appName("SparkApp")
+        .master("local[5]")
+        .getOrCreate()
+    )
+spark = create_spark_session()
+8.When you use local[*] in creating spark session what cluster spark will choose? 
+  ans - Local Hadoop and internal machines
+9.Output of pyspark code on Rank function 
+  ans- row_number()-Returns a sequential number starting from 1 within a window partition
+	rank() -	Returns the rank of rows within a window partition, with gaps.
+      percent_rank()-Returns the percentile rank of rows within a window partition.
+      dense_rank() -Returns the rank of rows within a window partition without any gaps. Where as Rank() returns rank with gaps.
+10.Convert rdd to dataframe and select two columns from it. Options were based on map 
+   ans - columns = ["language","users_count"]
+	data = [("Java", "20000"), ("Python", "100000"), ("Scala", "3000")]
+      rowData = map(lambda x: Row(*x), data) 
+      dfFromData3 = spark.createDataFrame(rowData,columns)
+      dfFromData3.select('language','users_count')
+11.Question on Creating dataframe from sparkContext and sqlContext  
+   ans - from pyspark import SparkContext
+         from pyspark.sql import SQLContext
+	   sc = SparkContext('local', 'Spark SQL') 
+	   sqlc = SQLContext(sc)
+12.7)How to update column in pyspark?
+  df2=df.withColumn("salary", df.salary*3)
+
+13. function to count rows in dataframe- count()
+
+
+Datawarehouse
+===============
+  
+1) which one to upload first in datawarehouse fact table or dimension table?
+     The process of loading the base schema requires that fact tables and dimension tables be loaded. Fact tables bear foreign keys to the dimension tables and are therefore dependent entities. 
+     This would suggest that dimension tables be loaded first
+2)What is orchestration?
+	Orchestration is the coordination and management of multiple computer systems, applications and/or services, stringing together multiple tasks in order to execute a larger workflow or process. 
+      These processes can consist of multiple tasks that are automated and can involve multiple systems.
+         The goal of orchestration is to streamline and optimize the execution of frequent, repeatable processes and thus to help data teams more easily manage complex tasks and workflows. Anytime a process is repeatable, and its tasks can be automated, orchestration can be used to save time, increase efficiency, and eliminate redundancies. 
+      For example, you can simplify data and machine learning with jobs orchestration.
+3)What is ETL?
+   ETL, which stands for extract, transform and load, is a data integration process that combines data from multiple data sources into a single, 
+consistent data store that is loaded into a data warehouse or other target system.
+
+4)What is Fact,dimension,measures?
+ 
+	https://blogs.sap.com/2021/07/22/facts-measures-and-dimensions/
+
+5)What are the essential table to implement star schema ?
+ Fact tables and dimension tables
+A star schema has a single fact table in the center, containing business "facts" (like transaction amounts and quantities). 
+The fact table connects to multiple other dimension tables along "dimensions" like time, or product
+
+6)What are characteristics of how large companies using big data analytics effectively? 
+  
+  Volume. In the current scenario, the amount of data that companies possess matters. ...
+ Velocity. Velocity refers to the swiftness of data processing. ...
+  Variety. Variety refers to the diverse categories of big data. ...
+  Value. ...
+ Veracity. ...
+ Validity. ...
+ Volatility. ...
+ Visualization.
+
+
+7)OLAP is part of which option(data warehouse)
+  OLAP combines and groups this data into categories to provide actionable insights for strategic planning. For example, a retailer stores data about all the products it sells, 
+such as color, size, cost, and location.
+OLAP solutions enhance a data warehouse with aggregate data and business calculations
+
+8) Data Quality Check
+   the different aspects of data quality is the “Six Dimensions” model. This model breaks data quality down into the following concepts:
+
+   Consistency – Data values should not conflict with other values across data sets 
+   Accuracy – There should be no errors in the data
+   Validity – The data should conform to a certain format
+   Completeness – There should be no missing data
+   Timeliness – The data should be up to date
+   Uniqueness – There should be no duplicates 
+
+9) Storage Account Naming convention
+10) Which Integration runtime does not have private network support?
+	Self Hosted
+11) Which Distribution type to use for a fact table to minimize data movement?
+	Hash distribution
+12) Which tech is used for staging area in Modern data warehousing arch?
+	Data lake
+13) Pick data from ADLS gen2 using Data factory via azure active directory. Which authentication type to use for setting up connectors?
+	Managed Identity
+14) Azure Synapse Analytics supports parallel processing of data using split process across multiple compute nodes
+15) Check how to create spark session and syntax using .master .config .appName
+16) Code to sort based on a column in ascending order with null values coming last
+17) Spark breaks up the data into chunks called Partition for parallel processing. 
+18) Git command to rename the current branch.
+19)	Distribution strategy for Fact Table in Azure Synapse Analytics.
+20.	SCD Type 1
+21.	Apache Parquet is implemented using which algorithm?-->Apache Parquet is implemented using the record-shredding and assembly algorithm
+22.	Tuple modification scenario-based question in python.
+23.	Class and object related questions in python.
+24.	While loop based question in python.
+25.	Exception handling-based question in python.
+26.	String slicing-based question in python.
+27.	Spark pool related scenario-based question in Synapse Analytics.
+28.	 4 SQL queries based on aggregation, joins and date time functions, schema and expected result were given.
+29.	Referential integrity in SQL.
+30.	Decorator scenario-based question in python.
+31.	Worker node and executor difference in spark.
+32.	File handling scenario-based question in python.
+33.	Ingress and egress-based question in data warehouse.
+34.	Storage level in spark.
+35.	Compacting small files in Pyspark.
+36.	Upsert in Pyspark.
+37.	Different ways of importing modules in Python.
+38.	How to create spark session.
+39.	Null handling-based question in spark.
+40.	Azure AD based authentication.
+41) Your team is planning on using External tables in Azure Synapse Analytics. Which of the following can be queried via the use of External tables?
+  Objects in Azure Data Lake Gen2
+  Files in Azure File Shares
+  Documents in Azure Cosmos DB
+  Tables in Azure SQL Databases
+Ans: 1
+
+42) You have an Azure Databricks cluster. Configuration of the cluster even after it is terminated. Which of the following can do for this requirement? 
+  Pin the cluster
+  Create a notebook in the clutser with the cluster configuration
+  Configure the cluster init
+  NOTA
+Ans: 1
+
+43) Azure Synapse Analytics supports parallel processing of data using: 
+
+  Split processing across multiple compute nodes
+  High Performance single node machines
+  Doesn't support parallel processing
+  NOTA
+Ans: 1
+
+44. list = ['python', 'python', 'python']
+list = list * 2
+print(list)
+
+What is the correct outcome?
+
+  (['python', 'python', "python'], ['python', python', python'])
+  [pythonpython', pythonpython', 'pythonpython"]
+  ['python', 'python', 'python', 'python', 'python', 'python']
+  [[pythan: 'python, 'python'), ['python, pythoni, python']]
+Ans: 3
+
+45. S = 'python'
+for i in range(len(s)) :
+i = s[i]. upper ()
+print(s, end=**)
+
+select one
+ 
+PYTHON
+Python
+python
+p y t h o n
+Runtime Exception
+
+Ans: 5
+
+46. tuple = (1, 2, 3, [4, 5])
+tuple[3][1] = 10
+
+What will be the output of the above code.
+
+The code will fail since tuples are immutable
+(1, 2, 3, (4, 10))
+(1, 2, 3, 4, 10)
+(1, 2, 3, 4, 10)
+
+Ans: 2
+
+47. Difference between Datawarehouse and Datalake?
+
+
+
+Experience : 5 + Years
+10 questions -- Azure
+10 questions -- pyspark (basics related to cluster managers, different modes, output of dataframes)
+10 questions -- miscellaneous(azure, database,delta lake, data modeling questions)
+10 questions -- python (code outputs(5-6 questions))
+6 questions -- SQL ( 2 objective type and you need to write the SQL for 4 questions)
+
+SQL Questions :
+
+1) Professor(id,name,department_id) , department(id,department_name) , Course(id,name,department_id), schedule(profesor_id,course_id,year).
+write a query to get the professor name and course name who are not aligned with their respective departments
+
+2) event_table (dt,event_type)--get the data from for 2021 quarter
+Q1'21  other=1;sell=2;buy=1
+Q2'21   other=1;
+Q3'21   sell=2;other=3;
+Q4'21  buy=3,sell=5
+
+
+3) employee(id,name,dpet_id.salary),department(id,name): 
+get the count of employees for each department in descending order and department name should arrange alphabetically.
+
+
+4) customers table (id,first_name,last_name,etc): write a query to get the customers with total length(first_name and last_name) less than 12 characters and arrange it alphabetically by ascending length order and Id
+
+Miscellaneous:
+1) Minimun Cardinality -- How would you explain it to junior modelers
+2) SCD Type 2 Updates
+3) Column level security in dedicated sql pool (https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/column-level-security)
+4) You need to use the azure active directory authetication method to load data in Azure Data Lake Gen 2 Storage using Azure Data Factory pipeline. Which authentication menthod should we use? a) managed identity b) Access Key c) Shared Access Signature d ) None of the above
+5) Choose the one of options to mention during cloud computing talk with buisness executive leader.
+6) We need to get the data from on premise SQL server using ADF pipeline.Which integration service should be used for such ingestion. 
+
+pyspark questions related to local mode and cluster managers(objective type questions):
+Options like below:
+1) a) worker nodes and executor nodes use the same jvm 
+b) three types of deployment mode master client cluster
+c) two types of deployment mode client and cluster 
+d) cluster managers shares the same jvm with executores 
+2) a) cluster managers creates the worker nodes and allocate the resources
+
+
+python question related to output
+s = "cloudacademy"
+s1 = s[5:][1:]
+print(s1)
+what would be the output
+list1 = ('a', 'b', 'c', 'd', 'e', 'f', 'g')
+print(list1(["abcdefg"]))
+what would be the output
+few reptitive questions(refer to other documents)
+
+
+Three IR types are:
+Azure
+Self hosted
+Azure SSIS
+which does not have private network support?
+
+
+Azure Synapse studio notebook is based on?
+Ans - Spark pool
+
+Efficiently convert Dataframe df from 12 to 24 partitions
+Ans - sd.repartition(24)
+
+Lowest element of spark execution hierarchy
+Ans - task
+
+you have an azure databricks cluster, you want to keep the configuration of the cluster even after it is terminated?
+Ans -export the cluster config as json
+
+Find the dataframe distinct count
+Ans - df.groupBy("InvoiceNo").agg(expr("countDistinct(Quantity)"))
+
+Specify max partition size when reading file
+Ans - spark.file.maxPartitionBytes
+
+Relation between worker and executor
+Ans - An executor is a JVM inside a worker node
+
+Store rdd data in memory and rest in disk in deserialized manner
+MEMORY_AND_DISK	
+
+format in which all of the same data is grouped together
+Ans - column based
+
+command to compact a large number of files in each partition into fewer files
+Ans OPTIMIZE
+
+Spark Adaptive Query Execution 
+
+you have ADLS storage account & ADF resource. you want to ensure that authorization from ADF to storage account uses Azure active directory.
+what authentication type will you choose
+Options - Managed Identity, Access_Key, SAS. None
+Ans- Managed Identity
+
+renaming a column in pyspark
+ans - df.withColumnRenamed("old", "new");
+
+suppose someone has inadvertendly committed a sensitive API key stored in .secret folder.
+What is the correct way to scrub the information from GitHub?
+Ans - 
+
+How to create a feature branch using git-flow extension
+Ans - git flow feature start feature_branch
+
+Typical git workflow
+create new or edit existing files, stage the file, commit the file
+create/edit, stage, commit
+
+
+DATA WAREHOUSE
+1.	Scenario based questions fact table and dimension table about which one to upload first?
+2.	Algorithm used by parquet file format?
+3.	Question related to spark pool and sql pool used in azure synapse.
+4. specification of serverless pool
+
+
+                                                                   
+1.	Given two tables employee and department, generate a summary of how many employees are in each department. Sort the results from high to low by number of employees and then alphabetically by department.
+
+2.	 Write a query to print id, first name and last name. The length of combined name should be less than 12 letters long. Sort the results by combined name length, then alphabetically case insensitive.
+
+3.	Write a query to return a list of professor names and their associated courses for all courses outside of their departments.
+
+4.	Algorithm used by parquet data format
+
+5.	Parquet data format stores its elements in a
+•	Table
+•	Graph
+•	Csv File
+•	Tree
+
+6.	Questions related to python import statement.
+
+7.	Types of distribution in azure synapse 
+
+Hash,Heap,Round_Robin,Replicate
+
+8.	Access data in storage account using Azure AD
+
+9.	Code completion questions related to handling null values in a dataframe.
+
+10.	Which dataframe commands will not shuffle data from each executor
+
+Collect,map,orderBy,repartition,distinct,join.
+
+11.	Questions related to spark syntax (orderBy)
+
+12.	Databricks Delta command to display metadata.
+
+13.	Python code output related questions
+
+14.	Questions related to access control on delta tables
+
+15.	Data warehouse and data lake differences
+
+16.	Currency codes are part of which data category
+
+17.	GitFlow workflow related questions
+
+18.	Dataframe join output related question
+
+19.	Other questions from repository
+
+ 
+      
+
+ 
+1. tuple = (1, 2, 3, [4, 5])
+tuple[3][1] = 10
+
+What will be the output of the above code.
+
+The code will fail since tuples are immutable
+(1, 2, 3, (4, 10))
+(1, 2, 3, 4, 10)
+(1, 2, 3, 4, 10)
+Ans: 2
+
+2. List = (‘c’,’o’,’d’,’e’,’r’,’a’,’c’,’a’,’d’,’e’,’m’,’y’)
+List2 = list[len(‘coderacademy’)]
+Op:
+C
+Error
+Coder
+My
+Answer : Error out of index issue.
+
+3. list = ['e','x','a','m','p','l','e']
+print(list[4:][1:])
+op:
+exam
+error
+le
+mple
+
+4. x = 0
+y = 2
+z = len("python")
+x = y > z
+print(x)
+op:
+2
+1
+Error
+Bool
+Ans: bool
+
+5. Azure Synapse Analytics supports parallel processing of data using: 
+Split processing across multiple compute nodes
+High Performance single node machines
+Doesn't support parallel processing
+NOTA
+
+Ans: 1
+
+6. Azure Synapse studio notebook is based on?
+Ans - Spark pool
+
+7. Find the dataframe distinct count
+Ans - df.groupBy("InvoiceNo").agg(expr("countDistinct(Quantity)"))
+
+8. Relation between worker and executor
+Ans - An executor is a JVM inside a worker node.
+
+9. suppose someone has inadvertendly committed a sensitive API key stored in .secret folder.
+What is the correct way to scrub the information from GitHub?
+Ans -  Remove the file and contact git support to remove it from cache
+
+10. How to create a feature branch using git-flow extension
+Ans - git flow feature start feature_branch
+
+11. Apache Parquet is implemented using which algorithm?
+Ans: record-shredding and assembly algorithm
+
+
+SQL:
+1)	Employee table containing ID, FirstName, LastName
+Output should contain ID FirstName, LastName of those employees who’s firstName + LastName is less than 15 characters,
+Order by combined name length desc, name alphabetically, then ID asc.
+
+2)	Employee and Department table 
+Output should contain, Department name and employee count:
+Find the no, of employees in each department, if there are no employees set it to 0.
+
+3)	Department Table: ID, Name
+Professor Table: ID, Name, Dept_ID
+Schedule: Course_ID, Prof_ID, Time
+Courses: Course_ID, Name, Pro_ID, Dept_ID
+
+A professor belongs to a specific department. But they can teach courses outside their department. Find the Prof name and course name and department name of those professors who teach courses other than their own department.
+
+
+ADF Skiplinecount and FirstRowAsHeader commad in copy activity in ADF 
+
+Commad for setting maximum partition size in pyspark spark.file.maxPartitionBytes 
+
+Code for setting SparkSession -> spark = SparkSession.builder.master(“local”).appName(“WordCount”).confif(“....”).getOrCreate() 
+
+What can be sources of External Table in Azure Synanpse: ADLS and BLOB 
+
+For ADF event trigger which service to activate first: Evnetgrid 
+
+Unix_timestamp(col(“Time”),”MM-dd-yyyy HH:mm:ss”).alias(“”) command of Pyspark 
+
+GitHubFlow command 
+
+Git Workflow 
+
+Best file format for complicated nested datatypes among: parqut, json, orc, avro 
+
+Best type of table to apply SCD on : Address, Orders, Historic 
+
+Many Questions on Try Except Code Snippets 
+
+File = open(“abc.txt”) output of File.readline(3))? 
+
+  X = 0 , Y = 2, Z = len(“pythin”), X = Y>Z, type(X) ?? -> Boolean 
+
+Question on theory of Inheritance and Polumorphism 
+
+Coding Question:  
+
+select concat(first_name, last_name) as name, ID from employee where  
+		length(concat(first_name, last_name) > 12 order by concat(first_name, 		last_name), ID 
+
+A question regarding write quesry to return  a list of professor names, and their associated courses outside thier departments. Table: Professor, Department, Course, Schedule 
+
+T = (1, 2,3 , [1,2,3]) 
+
+T[3][1] = 10 Output? List inside a tuple is mutable but tuple itslef is immutable here output = (1,2,3,[1,10,3]) 
+
+Number of parallelsim in  
+
+Executor and many partition --> number of partitions  
+
+ one partition and many execitors --> Only One 
+
+
+
+
+--choose the correct answer of order of processing of dimension and fact table  in ETL batchload
+Ans- Multiple dimension tables can be loaded parallely and after the dimesion tables are loaded completely we can load multiple fact      tables  parallely
+
+--- Choose the correct output which would be displayed after executing below code
+
+    my_func()
+
+    def my_func():
+     print("The list is large")
+
+
+     a) Function error: my_func doesnot exsist
+     b) Syntax error:  my_func doesnot exsist
+     c) Name error:  function my_func doesnot exsist
+     d) "The list is large"
+
+     Ans - C
+
+---Choose the correct option about primary key and Unique key from following.
+  1) There can be nulls in primary key and no nulls in Unique key 
+  2)There can be only one primary key and only one unique key in table
+  3)There can be only one primary key and multiple unique key 
+   Ans-3
+
+   ---The relationship that requires all the tables in database to contain unique value:
+   Ans - one to one
+
+   --To use sparksql what is to be done first.
+   Ans -df.createOrReplaceTempview("temp_view") spark.sql("select * from temp_view").show
+
+
+   --- Scenario based Question on choosing SCD types
+
+   --Scenario based question on difference between star and snowflake schema
+
+
+   --Microsoft Azure Data Quality services (Dqs) doesnot contain tabs from which  of the following
+
+   1)Valid
+   2)invalid
+   3)suggested
+   4) Correct
+
+   ans- 3 
+
+---------------------------------------------------------------------------------------------------
+
+HackerRank Test, 23rd May 2024
+
+1. Which tasks do you perform to prepare data for analysis?
+- Data Transformation
+
+2. Currency codes, Business Unit codes and units of measurement are part of wich data category?
+- Reference
+
+3. Large data projects can be complex. The projects often involve hundreds of decisions.
+- Data Engineer
+
+4. Which of the following statements about data warehouses and data lakes is false?
+
+5. The source system initiates the data transfer for the ETL process.This method is uncommon in practice, as each system would have to move the data to the ETL process individually
+- Push Method
+
+6. How are Spark DataFrames and RDDs related?
+- Spark DataFrame is a layer on RDDs
+
+7. Given a DataFrame ‘df’, what method is used to save the DataFrame to a file?
+- df.write.save()
+
+8. Let’s say you have defined a transformation operation on a DataFrame called “data” using the map function and you store this mapping on a variable called “tennis”. When is this mapping executed?
+- collect()
+
+9. Given the DataFrame `df`, what function or property is called to save it as a table?
+- df.write.saveAsTable()
+
+10. Before running SQL queries on a DataFrame, what method must be run first?
+- createOrReplaceTempView
+
+11. Let’s say you have a Pandas DataFrame called “panda” and you want to convert it to a Spark DataFrame. What command would you use to do so?
+- createDataFrame()
+
+12. In a table, you have several columns. One of the columns, named Country, has several values that are duplicates. You want to list the unique country names by removing the duplicates. Which keyword should you use?
+- DISTINCT
+
+13. Which of the following is the correct order of a SQL statement?
+- SELECT, FROM, WHERE, GROUP BY, HAVING, ORDER BY
+
+14. Which type of relationship requires tables to contain unique values in each one of them?
+- One-One
+
+15. Which type of join is also known as a Cartesian product?
+- CROSS JOIN
+
+16. _______ clause creates temporary relation for the query on which it is defined.
+- WITH
+
+17. Identify essential table types that we can use to implement a Star schema.
+- Fact and Dimension Table
+
+18. Which example is a valid invocation of this function for a student with the id 1 and the name Alice?
+- function_name(1, "Alice")
+
+--------------------------------------------------------------------------------------------
+1.Your team is designing a data engineering solution for your company. The data will then be written as files in an Azure Data Lake Gen2 storage account.
+You have to decide on the file format for the files that will be stored in the storage account.
+Some of the queries used within Azure Databricks will only target certain columns of data within the files. You have to ensure that the queries fired are optimized for speed and efficient  
+Which of the following would you choose as the underlying file format for the files?
+Pick ONE option
+parquet-correct
+CSV
+tsv
+Search
+
+2.How can parameters be passed into an Azure Databricks notebook from Azure Data Factory?
+Pick ONE option
+Use notebook wingets to define parameters that can be passed into the notebook
+Use the new API endpoint option on a notebook in Databricks and provide the paran
+Render the notebook to an API endpoint in Databricks, defining parameter names-correct
+
+3.Which of the data repositories serves as a pool of raw data and stores large amounts of structured, semi-structured, and unstructured data in their native formats?
+Pick ONE option
+Data Lakes-correct
+Data Warehouses
+Data Marts
+Relational Databases
+
+4.Azure Synapse Analytics supports parallel processing of data using:
+Pick ONE option
+Split processing across multiple compute nodes-correct
+High Performance single node machines
+Doesnt support parallel processing
+None of above
+
+5.uncache data using unpersist()
+
+6.Which of the following describes the relationship between worker nodes and executors?
+PICK ONE option
+An executor is a java virtual machine(jvm) running on a worker node-correct
+A worker node is a java virtual machine(jvm) running on an executor
+There are always more worker nodes than executors
+Executors and worker nodes are synonymous
+
+7.Pick ONE option
+Collecting the results from the executors
+Executing code assigned to it
+Responding to a user's program or input
+Requesting memory and CPU resources from cluster managers
+Manitaining information about the Spark Application
+Sending tasks to executors-correct
+
+8.Select the correct answer about running a Spark application in local mode?
+Pick ONE option
+Ther driver and worker are in the same jvm-correct
+It is suitable for production deployments
+There are two different deploy modes: Client and Cluster
+There are three different deploy mode: Master, Client and Cluster
+
+
+9.sort in adc order in df with null appearing last
+sortedDF = df.orderBy(asc_nulls_last("column_name"))
+
+10.Which branching strategy uses feature flags to limit any functionality that has been merged into the main branch before it is entirely ready for releas
+Pick ONE option
+Release flow
+GitHub flow-correct
+GitFlow
+Fork and pull
+
+
+11.Junior data modelers creates a recursive relationship in a brand new data model. You take del to check this out. What should you be looking for to locate this recursive
+One of your junior data modelers creates a recursive relationship in a brand new data model. You take a look at this model to check this out. What should you be looking for to locate this recursive relationship?
+Pick ONE option
+Six entities involved in the relationship
+Three entities involved in the relationship
+There is not such thing as a recursive relationship
+The same entity being used for both sides of a relationship-correct
+
+12.currency code busineess unit code nd units of measurement are part of which data category
+Data quality 
+transactional
+metadata
+reference data-correct
+
+
+13.avro is Based file format-row based
+
+14.Delta Lake supports both batch and streaming data by providing a format that can accommodate both types of data.
+Pick ONE option
+file
+batch
+table-correct
+stream
+
+15.Parquet stores elements in a
+Table-correct
+Graph
+Csv
+Tree
+
+
+16.Suppose someone has inadvertently committed a sensitive API key stored in the secrets folder. What is the correct way to scrub that information from GitHub?
+Pick ONE option
+Delete the sensitive file from GitHub. Then commit an empty file to the same location to overwrite it.-correct
+Use git to remove the unwanted commit and update historical references. Then contact GitHub support to run garbage collection and invalidate the Git cache.
+Once you commit something to GitHub, it lives forever. That's why globally unique hashes are used to identify everything.
+None of the above
+
+17.The file abc.txt contains the following 3 lines of text: abc def ghi
+What is the output of the following snippet of code in abc.py file?
+
+file = open ('abc. txt', 'w')
+file.close()
+file = open(' abc.txt')
+print file.read()
+
+ans-empty output
+
+18.SELECT the true statements:
+(select all that apply)
+Pick ONE option
+Inheritance means passing attributes and methods from a superclass to a subclass
+Multiple inheritance means that a class has more than one superclass
+Polymorphism is the situation in which a subclass is able to modify its superclass behavior
+All of the above-correct
+None of the above
+
+19.blah = iter(list (range (10)))
+What can be said of blah variable-it is a iteration variable
+
+
+20.Which of the following evaluates to True?
+Pick ONE option
+"22.67". isdecimal()
+"1.2". isdigit()
+"2.37" isalphal()
+"76" isdigit()-correct

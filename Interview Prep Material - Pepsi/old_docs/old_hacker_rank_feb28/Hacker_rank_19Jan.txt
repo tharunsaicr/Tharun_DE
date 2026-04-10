@@ -1,0 +1,58 @@
+Three IR types are:
+Azure
+Self hosted
+Azure SSIS
+which does not have private network support?
+
+
+Azure Synapse studio notebook is based on?
+Ans - Spark pool
+
+Efficiently convert Dataframe df from 12 to 24 partitions
+Ans - sd.repartition(24)
+
+Lowest element of spark execution hierarchy
+Ans - task
+
+you have an azure databricks cluster, you want to keep the configuration of the cluster even after it is terminated?
+Ans -export the cluster config as json
+
+Find the dataframe distinct count
+Ans - df.groupBy("InvoiceNo").agg(expr("countDistinct(Quantity)"))
+
+Specify max partition size when reading file
+Ans - spark.file.maxPartitionBytes
+
+Relation between worker and executor
+Ans - An executor is a JVM inside a worker node
+
+Store rdd data in memory and rest in disk in deserialized manner
+MEMORY_AND_DISK	
+
+format in which all of the same data is grouped together
+Ans - column based
+
+command to compact a large number of files in each partition into fewer files
+Ans OPTIMIZE
+
+Spark Adaptive Query Execution 
+
+you have ADLS storage account & ADF resource. you want to ensure that authorization from ADF to storage account uses Azure active directory.
+what authentication type will you choose
+Options - Managed Identity, Access_Key, SAS. None
+Ans- Managed Identity
+
+renaming a column in pyspark
+ans - df.withColumnRenamed("old", "new");
+
+suppose someone has inadvertendly committed a sensitive API key stored in .secret folder.
+What is the correct way to scrub the information from GitHub?
+Ans - 
+
+How to create a feature branch using git-flow extension
+Ans - git flow feature start feature_branch
+
+Typical git workflow
+create new or edit existing files, stage the file, commit the file
+create/edit, stage, commit
+

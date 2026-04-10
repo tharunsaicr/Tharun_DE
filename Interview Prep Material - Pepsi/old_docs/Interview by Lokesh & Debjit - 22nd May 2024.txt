@@ -1,0 +1,19 @@
+1. Tell us about yourself and your experience in brief.
+2. Half interview was around my last project experience.
+3. Optimization (related to project).
+4. Incremental load in silver layer (related to project).
+5. Let's say we are joining two normal size table and getting OOM. We tried configuration changes but that doesn't worked. How you will solve the issue.
+6. Write SQL query (You need to delete the older rows)
+Input
+ID	Name	CreateDate
+1	A	20-May-24
+1	A	21-May-24
+2	B	20-May-24
+
+Output
+1	A	21-May-24
+2	B	20-May-24
+
+7. Source is RDMS and ingestion team decided to update data between 7PM - 9PM. How you will schedule the optimal trigger is ADF to get the latest data everyday (without event based trigger).
+
+8. One SQL question is from Repository (getting average processing time of machine).

@@ -1,0 +1,20 @@
+Interview by Sishaa ->01-04-2024
+
+1.She introduced herself and the project
+2. my introduction 
+3. talked about my project
+-->asked
+1. which data sources were used 
+2. how do you implemented CDC layer
+3. how many layers were there
+4. why did you created external table over synapse
+5. how you were triggering the metadata
+6. a task that you accomplished where your debugging skills were identified
+7. how good you are in technical skills 
+8. Python question(Iterate a given list and check if a given element exists as a key’s value in a dictionary. If not, delete it from the list 
+Given:
+•roll_number = [47, 64, 69, 37, 76, 83, 95, 97]
+•sample_dict = {'Jhon':47, 'Emma':69, 'Kelly':76, 'Jason':97})
+9. long running queries, how did you debug those
+10. data related issues , how did you handle those
+11. general discussion about what I am going to do in this project if selected

@@ -1,0 +1,51 @@
+Experience : 5 + Years
+10 questions -- Azure
+10 questions -- pyspark (basics related to cluster managers, different modes, output of dataframes)
+10 questions -- miscellaneous(azure, database,delta lake, data modeling questions)
+10 questions -- python (code outputs(5-6 questions))
+6 questions -- SQL ( 2 objective type and you need to write the SQL for 4 questions)
+
+SQL Questions :
+
+1) Professor(id,name,department_id) , department(id,department_name) , Course(id,name,department_id), schedule(profesor_id,course_id,year).
+write a query to get the professor name and course name who are not aligned with their respective departments
+
+2) event_table (dt,event_type)--get the data from for 2021 quarter
+Q1'21  other=1;sell=2;buy=1
+Q2'21   other=1;
+Q3'21   sell=2;other=3;
+Q4'21  buy=3,sell=5
+
+
+3) employee(id,name,dpet_id.salary),department(id,name): 
+get the count of employees for each department in descending order and department name should arrange alphabetically.
+
+
+4) customers table (id,first_name,last_name,etc): write a query to get the customers with total length(first_name and last_name) less than 12 characters and arrange it alphabetically by ascending length order and Id
+
+Miscellaneous:
+1) Minimun Cardinality -- How would you explain it to junior modelers
+2) SCD Type 2 Updates
+3) Column level security in dedicated sql pool (https://learn.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/column-level-security)
+4) You need to use the azure active directory authetication method to load data in Azure Data Lake Gen 2 Storage using Azure Data Factory pipeline. Which authentication menthod should we use? a) managed identity b) Access Key c) Shared Access Signature d ) None of the above
+5) Choose the one of options to mention during cloud computing talk with buisness executive leader.
+6) We need to get the data from on premise SQL server using ADF pipeline.Which integration service should be used for such ingestion. 
+
+pyspark questions related to local mode and cluster managers(objective type questions):
+Options like below:
+1) a) worker nodes and executor nodes use the same jvm 
+b) three types of deployment mode master client cluster
+c) two types of deployment mode client and cluster 
+d) cluster managers shares the same jvm with executores 
+2) a) cluster managers creates the worker nodes and allocate the resources
+
+
+python question related to output
+s = "cloudacademy"
+s1 = s[5:][1:]
+print(s1)
+what would be the output
+list1 = ('a', 'b', 'c', 'd', 'e', 'f', 'g')
+print(list1(["abcdefg"]))
+what would be the output
+few reptitive questions(refer to other documents)

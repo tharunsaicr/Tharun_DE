@@ -1,0 +1,13 @@
+1) list = [3,5,1,6,3,32,34,11,3,7,9]. Find the value in the given list that is duplicated and number of occurance
+
+2) Print factorial of a given number ex - 5 
+
+3) Explain your previous project and what was your core task in the project
+
+4) Medallion architecture used in your project.
+
+5) which approach will be better to fetch/select the values from  columns containing large dataset -Spark core SQL API or Spark SQL + dataframe.
+
+6) Did you use bucketing method? if yes, how it help with query optimization in migration notebook?
+
+ 

@@ -1,0 +1,14 @@
+1. Storage Account Naming convention
+2. Which Integration runtime does not have private network support?
+	Self Hosted
+3. Which Distribution type to use for a fact table to minimize data movement?
+	Hash distribution
+4. Which tech is used for staging area in Modern data warehousing arch?
+	Data lake
+5. Pick data from ADLS gen2 using Data factory via azure active directory. Which authentication type to use for setting up connectors?
+	Managed Identity
+6. Azure Synapse Analytics supports parallel processing of data using split process across multiple compute nodes
+7. Check how to create spark session and syntax using .master .config .appName
+8. Code to sort based on a column in ascending order with null values coming last
+9. Spark breaks up the data into chunks called Partition for parallel processing. 
+10. Git command to rename the current branch.
